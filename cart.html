@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/cart.css" />
     <script src="scripts/common.js" defer></script>
     <script src="scripts/cart.js" defer></script>
+    <link rel="stylesheet" href="css/mapstyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
 <header>
@@ -16,7 +18,7 @@
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="services.html">SERVICES</a></li>
             <li><a href="contact.html">CONTACT</a></li>
-            <li><a class="nav-button" href="cart.html">VIEW CART</a></li>
+            <li><a class="nav-button" href="shop.html">STOREFRONT</a></li>
         </ul>
     </nav>
 </header>
@@ -27,6 +29,24 @@
     </section>
     <section id="cart-area"></section>
 </main>
+ <footer>
+      <div class="footer-column">
+        <h4 style="padding: 0em;">I WOULD LOVE TO HEAR FEEDBACK:</h4>
+        <br/>
+        <a href="https://forms.gle/wGAimHQj5CntJ2KG7" target="_blank">Google Form</a><br/><br/>
+          <h4 style="padding: 0em;">EMAIL:</h4>
+        <br/>
+        <a href="mailto:bdstubbs@amarillocollege.com">Bailey Vaughan</a>
+      </div>
+      <div class="footer-column">
+        <img id="footer-image" src="images/favicon.jpg" alt="Bailey's Portfolio Logo" />
+      </div>
+      <div class="footer-column">
+        <div id="map" class="footer-map"></div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="scripts/mapscript.js"> </script>
 </body>
 </html>
 

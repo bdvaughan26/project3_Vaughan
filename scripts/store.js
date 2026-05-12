@@ -5,10 +5,13 @@ function displayProducts() {
     let html = '';
     products.forEach(product => {
         html += `<div class="product-card">
+            <img src="images/product_images/${product.id.toString()}.jpg" class="product-image"></img> 
+            <div class="product-text">
             <h3>${product.name}</h3>
             <p>$${product.price.toFixed(2)}</p>
             <label>Quantity</label>${buildSelect(product.quantities, 'qty-' + product.id, 1)}
             <button class="action-button primary-button" onclick="addToCart(${product.id})">Add to Cart</button>
+            </div>
         </div>`;
     });
     productList.innerHTML = html;
@@ -30,5 +33,7 @@ function addToCart(productId) {
     saveCart(cart);
     alert(`${product.name} added to cart.`);
 }
+
+
 
 displayProducts();

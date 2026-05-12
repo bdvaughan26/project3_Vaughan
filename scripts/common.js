@@ -5,10 +5,6 @@ const products = [
     { id: 4, name: 'Social Media Graphics Package:', price: 300.00, quantities: [1, 2, 3, 4, 5] },
     { id: 5, name: 'Print Design Package', price: 250.00, quantities: [1, 2, 3, 4, 5] },
 ];
-//     { id: 4, name: 'Backpack', price: 39.00, colors: ['Black', 'Olive', 'Tan'], sizes: ['Standard'], quantities: [1, 2, 3, 4, 5] },
-//     { id: 5, name: 'Water Bottle', price: 16.00, colors: ['Silver', 'Blue', 'Purple'], sizes: ['20 oz', '32 oz'], quantities: [1, 2, 3, 4, 5] },
-// 	{ id: 6, name: 'Mug', price: 15.99, colors: ['Black', 'Maroon'], sizes: ['16 oz'], quantities:[1, 2, 3, 4, 5] }
-// ];
 
 function getCart() {
     const cartText = localStorage.getItem('cart');

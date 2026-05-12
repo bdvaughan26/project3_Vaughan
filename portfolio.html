@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/mapstyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
   </head>
   <body>
     <div>
@@ -19,15 +21,13 @@
           <li><a href="portfolio.html">PORTFOLIO</a></li>
           <li><a href="services.html">SERVICES</a></li>
           <li><a href="contact.html">CONTACT</a></li>
-          <li><a class="nav-button" href="cart.html">VIEW CART</a></li>
+          <li><a class="nav-button" href="shop.html">LET'S WORK TOGETHER!</a></li>
         </ul>
       </nav>
     </div>
     <main>
       <div class="container">
-        <div class="heading">
-          <h2>Bailey's Portfolio</h2>
-        </div>
+          <h2 class="portfolio-heading">Bailey's Portfolio</h2>
         <div class="paragraph">
           <p>
          Welcome to my portfolio! This collection showcases a range of work created in the classroom, at
@@ -36,126 +36,113 @@
           </p>
         </div>
        <div class="box">
-        <div class="featured-murals">
+        <div class="dream">
           <img
-            src="images/portfolio_images/mural1.jpg"
-            alt="36 foot mural created for our church 100th celebration"
+            src="images/portfolio_images/01.jpg"
+            alt="The Church at Quail Creek 100th Logo"
+          />
+          <img src="images/portfolio_images/04.jpg"
+               alt="The Church at Quail Creek Timeline Wall 1" />
+          <img
+            src="images/portfolio_images/07.jpg"
+            alt="Digital Imaging II Class: Personal Style 2"
+          />
+          <img src="images/portfolio_images/10.jpg"
+               alt="Digital Imaging II Class: Commercial Illustration 1" />
+          <img
+            src="images/portfolio_images/13.jpg"
+            alt="Digital Imaging II Class: Commercial Illustration 4"
+          />
+         <img
+            src="images/portfolio_images/18.jpg"
+            alt="Art Direction I: Matcha Madness Food Truck 3D Mockup"
           />
           <img
-            src="images/portfolio_images/mural2.jpg"
-            alt="Second 36 foot mural created for our church 100th celebration"
+            src="images/portfolio_images/19.jpg"
+            alt="Art Direction I: Matcha Madness Food Truck 3D Mockup"
           />
         </div>
 
         <div class="dream">
           <img
-            src="images/portfolio_images/1.jpg"
-            alt="Drawing 1 Revearse Charcoal Study"
-          />
-          <img src="images/portfolio_images/2.jpg" alt="Youth Group Poster" />
-          <img
-            src="images/portfolio_images/3.jpg"
-            alt="Design 1 Tonal Value Case Study"
-          />
-          <img src="images/portfolio_images/4.png" alt="Falala Lights Logo" />
-          <img
-            src="images/portfolio_images/5.jpg"
-            alt="Design 1 Pattern Study"
+            src="images/portfolio_images/02.jpg"
+            alt="The Church at Quail Creek Gift Bags (100th Logo Used)"
           />
           <img
-            src="images/portfolio_images/6.jpg"
-            alt="Camp Truth T-shirt Design"
+            src="images/portfolio_images/05.jpg"
+            alt="Companion Buddy Logo"
           />
           <img
-            src="images/portfolio_images/7.jpg"
-            alt="Drawing 1 Ink Study"
-          />
-          <img src="images/portfolio_images/8.png" alt="Esther Rings Logo" />
-        </div>
-
-        <div class="dream">
-          <img
-            src="images/portfolio_images/9.jpg"
-            alt="Intro to Computer Graphics Class Personal Business Card"
-          />
-          <img
-            src="images/portfolio_images/10.jpg"
-            alt="Design 1 Siloutte Case Study"
+            src="images/portfolio_images/08.jpg"
+            alt="Digital Imaging II Class: Personal Style 3"
           />
           <img
             src="images/portfolio_images/11.jpg"
-            alt="Youth Group Poster"
-          />
-          <img
-            src="images/portfolio_images/12.jpg"
-            alt="Drawing 1 Continuous Drawing"
-          />
-          <img
-            src="images/portfolio_images/13.jpg"
-            alt="Intro to Computer Graphics Avatar Sticker"
+            alt="Digital Imaging II Class: Commercial Illustration 2"
           />
           <img
             src="images/portfolio_images/14.jpg"
-            alt="Design 1 Texture Assignment"
+            alt="Web Design I Class: Infographic Website"
           />
-          <img src="images/portfolio_images/15.jpg" alt="Camp Truth Logo" />
           <img
-            src="images/portfolio_images/16.jpg"
-            alt="Design 1 Collage Assignment"
+            src="images/portfolio_images/17.jpg"
+            alt="Art Direction I: Exercise 2"
           />
+          <img src="images/portfolio_images/20.jpg"
+               alt="Art Direction I: Matcha Madness Food Truck" />
         </div>
 
         <div class="dream">
           <img
             class="rotate"
-            src="images/portfolio_images/18.jpg"
-            alt="Drawing 1 Graphite Study"
+            src="images/portfolio_images/03.jpg"
+            alt="The Church at Quail Creek 100th Timeline Wall"
           />
           <img
-            src="images/portfolio_images/19.jpg"
-            alt="Youth Group Poster"
+            src="images/portfolio_images/06.jpg"
+            alt="Digital Imaging II Class: Personal Style 1"
           />
           <img
-            src="images/portfolio_images/20.jpg"
-            alt="Design 1 Tonal Value Case Study"
+            src="images/portfolio_images/09.jpg"
+            alt="Digital Imaging II Class: Personal Style 4"
           />
           <img
-            src="images/portfolio_images/21.png"
-            alt="Falala Lights Graphics"
+            src="images/portfolio_images/12.jpg"
+            alt="Digital Imaging II Class: Commercial Illustration 3"
           />
           <img
-            src="images/portfolio_images/22.jpg"
-            alt="Drawing 1 Cross-Hatching Study"
+            src="images/portfolio_images/15.jpg"
+            alt="Web Design II Class: Infographic Website"
           />
           <img
-            src="images/portfolio_images/23.png"
-            alt="Camp Truth Shirt Design"
+            src="images/portfolio_images/16.jpg"
+            alt="Web Design II Class: Book Store Website"
           />
           <img
-            src="images/portfolio_images/24.jpg"
-            alt="Design 1 Line Ink Assignment"
+            src="images/portfolio_images/21.jpg"
+            alt="Art Direction I: Matcha Madness Food Truck App"
           />
-          <img src="images/portfolio_images/25.png" alt="Esther Rings Logo" />
-        </div>
+          </div>
       </div>
       </div> 
     </main>
     <footer>
       <div class="footer-column">
-        <h4 style="padding: 0em">I WOULD LOVE TO HEAR FEEDBACK:</h4>
-        <br />
-        <a href="https://forms.gle/wGAimHQj5CntJ2KG7" target="_blank"
-          >Google Form</a
-        >
-      </div>
-      <div class="footer-column">
-        <img src="images/favicon.jpg" alt="Bailey's Portfolio Logo" />
-      </div>
-      <div class="footer-column">
-        <h4 style="padding: 0em">EMAIL:</h4>
-        <br />
+        <h4 style="padding: 0em;">I WOULD LOVE TO HEAR FEEDBACK:</h4>
+        <br/>
+        <a href="https://forms.gle/wGAimHQj5CntJ2KG7" target="_blank">Google Form</a><br/><br/>
+          <h4 style="padding: 0em;">EMAIL:</h4>
+        <br/>
         <a href="mailto:bdstubbs@amarillocollege.com">Bailey Vaughan</a>
       </div>
+      <div class="footer-column">
+        <img id="footer-image" src="images/favicon.jpg" alt="Bailey's Portfolio Logo" />
+      </div>
+      <div class="footer-column">
+        <div id="map" class="footer-map"></div>
+      </div>
     </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="scripts/mapscript.js"> </script>
   </body>
 </html>

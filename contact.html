@@ -8,6 +8,8 @@
     <meta name="description"
         content="If you have any questions do not hesitate to ask. Contact me via phone number, email, and a google form.">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mapstyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <link rel="icon" href="images/favicon.png">
     <script>
         function validateForm() {
@@ -35,16 +37,16 @@
       <li><a href="portfolio.html">PORTFOLIO</a></li>
       <li><a href="services.html">SERVICES</a></li>
       <li><a href="contact.html">CONTACT</a></li>
-      <li><a class="nav-button" href="cart.html">VIEW CART</a></li>
+      <li><a class="nav-button" href="shop.html">LET'S WORK TOGETHER!</a></li>
     </ul>
   </nav>
     <main>
         <div class="container">
-            <div class="heading">
+        <div class="contact-heading">
                 <h2>Contact Me</h2>
             </div>
-            <div class="paragraph">
-                <p>
+            <div>
+                <p class="contact-paragraph">
                     Have a project in mind or interested in working together? I’d love to connect!
                     You can use the form below or reach out through my contact information. I’ll respond as soon as possible.
                 </p>
@@ -97,24 +99,25 @@
                 </table>
             </div>
         </div>
+      </div> 
     </main>
     <footer>
       <div class="footer-column">
         <h4 style="padding: 0em;">I WOULD LOVE TO HEAR FEEDBACK:</h4>
         <br/>
-        <a href="https://forms.gle/wGAimHQj5CntJ2KG7" target="_blank"
-          >Google Form</a
-        >
-      </div>
-      <div class="footer-column">
-        <img src="images/favicon.jpg" alt="Bailey's Portfolio Logo" />
-      </div>
-      <div class="footer-column">
-        <h4 style="padding: 0em;">EMAIL:</h4>
+        <a href="https://forms.gle/wGAimHQj5CntJ2KG7" target="_blank">Google Form</a><br/><br/>
+          <h4 style="padding: 0em;">EMAIL:</h4>
         <br/>
         <a href="mailto:bdstubbs@amarillocollege.com">Bailey Vaughan</a>
       </div>
+      <div class="footer-column">
+        <img id="footer-image" src="images/favicon.jpg" alt="Bailey's Portfolio Logo" />
+      </div>
+      <div class="footer-column">
+        <div id="map" class="footer-map"></div>
+      </div>
     </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="scripts/mapscript.js"> </script>
 </body>
-
 </html>
